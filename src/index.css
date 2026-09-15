@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FDFBF7;
+    --bg-soft-peach: #FAF0E6;
+    --text-chocolate: #2A1810;
+    --text-brown: #3D261C;
+    --text-muted: #8C766B;
+    --border-light: rgba(61, 38, 28, 0.1);
+
+    /* Flavour thematic tones */
+    --strawberry-main: #E84A5F;
+    --strawberry-bg: #FDF0F2;
+    --strawberry-border: #F8B1BA;
+
+    --pistachio-main: #6B8E4E;
+    --pistachio-bg: #F2F7EE;
+    --pistachio-border: #BCD4A5;
+
+    --mango-main: #EE8A19;
+    --mango-bg: #FFF7ED;
+    --mango-border: #FCD34D;
+
+    --chocolate-main: #4A2E2B;
+    --chocolate-bg: #F4EFEB;
+    --chocolate-border: #A3847C;
+
+    --caramel-main: #C86D27;
+    --caramel-bg: #FAF2EB;
+    --caramel-border: #E8BA93;
+
+    --vanilla-main: #9E7D47;
+    --vanilla-bg: #FAF7F2;
+    --vanilla-border: #D6C3A5;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-cream);
+    color: var(--text-chocolate);
+    font-family: 'Outfit', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--bg-cream);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C5B9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2A1810;
+}
+
+/* Custom Fonts */
+.font-serif-expressive {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-display-bold {
+  font-family: 'Syne', 'Outfit', sans-serif;
+}
+
+.font-sans-clean {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Subtle background grain noise overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom Cursor Rules */
+@media (pointer: fine) {
+  body {
+    cursor: default;
+  }
+}
+
+/* Glassmorphism utility */
+.glass-header {
+  background: rgba(253, 251, 247, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Text stroke for giant editorial titles */
+.text-stroke-brown {
+  -webkit-text-stroke: 1.5px #2A1810;
+  color: transparent;
+}
+
+/* Floating Animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulseSoft 4s ease-in-out infinite;
+}
