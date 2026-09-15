@@ -103,7 +103,7 @@ export default function Hero({ onExploreClick }) {
             <div className="absolute inset-0 rounded-full border border-[#E84A5F]/20 animate-pulse-soft pointer-events-none" />
 
             <img
-              src="/images/1.png"
+              src="./images/1.png"
               alt="CREMORA Gourmet Strawberry Cream Ice Cream Scoop"
               className="w-full h-full object-cover rounded-full shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
             />

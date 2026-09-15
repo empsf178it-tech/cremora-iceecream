@@ -58,7 +58,7 @@ export default function TheScoop() {
               className="relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-white/10"
             >
               <img
-                src="/images/13.png"
+                src="./images/13.png"
                 alt="CREMORA Macro Ice Cream Texture"
                 className="w-full h-full object-cover"
               />

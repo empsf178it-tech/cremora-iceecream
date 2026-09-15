@@ -12,7 +12,7 @@ export default function FinalMoment({ onOpenDiscover }) {
       {/* Floating Background Texture Visual */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <img
-          src="/images/7.png"
+          src="./images/7.png"
           alt="CREMORA Melting Scoop Texture"
           className="w-full h-full object-cover filter blur-xl scale-110"
         />
