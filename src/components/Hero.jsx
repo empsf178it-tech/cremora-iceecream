@@ -32,7 +32,7 @@ export default function Hero({ onExploreClick }) {
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
         
         {/* Left Column: Editorial Headlines */}
-        <div className="lg:col-span-7 space-y-8 text-left">
+        <div className="lg:col-span-7 space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ export default function Hero({ onExploreClick }) {
             <span>ARTISANAL CREATIONS</span>
           </motion.div>
 
-          <div className="overflow-hidden space-y-2">
+          <div className="overflow-hidden space-y-2 w-full">
             <motion.h1
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -61,7 +61,7 @@ export default function Hero({ onExploreClick }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-[#8C766B] max-w-md font-sans-clean font-light leading-relaxed"
+            className="text-lg md:text-xl text-[#8C766B] max-w-md mx-auto lg:mx-0 font-sans-clean font-light leading-relaxed"
           >
             “Made for the pause between busy moments.”
           </motion.p>
@@ -70,7 +70,7 @@ export default function Hero({ onExploreClick }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-wrap items-center gap-6 pt-4"
+            className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-4 w-full"
           >
             <a
               href="#flavours"

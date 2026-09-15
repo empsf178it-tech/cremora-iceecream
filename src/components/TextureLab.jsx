@@ -34,7 +34,7 @@ export default function TextureLab() {
                 onClick={() => setActiveTexture(item)}
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.4 }}
-                className={`cursor-pointer rounded-3xl p-8 transition-all duration-500 border flex flex-col justify-between h-[480px] relative overflow-hidden ${
+                className={`cursor-pointer rounded-3xl p-6 lg:p-8 transition-all duration-500 border flex flex-col justify-between h-[480px] relative overflow-hidden ${
                   isSelected
                     ? 'bg-white shadow-2xl border-[#E84A5F]/40 scale-[1.03]'
                     : 'bg-[#FAF0E6]/60 border-[#3D261C]/05 hover:bg-white/80'
@@ -50,7 +50,7 @@ export default function TextureLab() {
                   <span className="text-xs font-bold tracking-widest uppercase text-[#E84A5F]">
                     DIMENSION / {item.id.toUpperCase()}
                   </span>
-                  <h3 className="text-4xl font-black font-serif-expressive text-[#2A1810]">
+                  <h3 className="text-2xl sm:text-3xl md:text-2xl lg:text-4xl font-black font-serif-expressive text-[#2A1810] tracking-tight break-words">
                     {item.title}
                   </h3>
                   <p className="text-xs font-semibold uppercase tracking-wider text-[#8C766B]">

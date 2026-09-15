@@ -49,17 +49,17 @@ export default function Navigation({ onOpenDiscover }) {
             : 'py-6 bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Left: Brand Mark with Logo */}
           <a
             href="#home"
             className="hover:opacity-90 transition-opacity"
           >
-            <BrandLogo showText textClassName="text-2xl md:text-3xl" />
+            <BrandLogo showText textClassName="text-2xl lg:text-3xl" />
           </a>
 
           {/* Center Links (Desktop) */}
-          <nav className="hidden md:flex items-center space-x-10">
+          <nav className="hidden lg:flex items-center space-x-8 xl:space-x-10">
             {navLinks.map((link) => {
               const sectionId = link.href.replace('#', '');
               const isActive = activeSection === sectionId;
@@ -84,7 +84,7 @@ export default function Navigation({ onOpenDiscover }) {
           </nav>
 
           {/* Right: CTA Button */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center">
             <button
               onClick={onOpenDiscover}
               data-cursor="DISCOVER"
@@ -98,7 +98,7 @@ export default function Navigation({ onOpenDiscover }) {
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-[#2A1810] focus:outline-none"
+            className="lg:hidden p-2 text-[#2A1810] focus:outline-none"
             aria-label="Toggle Menu"
           >
             {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
@@ -114,7 +114,7 @@ export default function Navigation({ onOpenDiscover }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: '-100%' }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-30 bg-[#FDFBF7] flex flex-col justify-between px-8 py-24 md:hidden"
+            className="fixed inset-0 z-30 bg-[#FDFBF7] flex flex-col justify-between px-8 py-24 lg:hidden"
           >
             <div className="space-y-8 mt-8">
               {navLinks.map((link, idx) => {
