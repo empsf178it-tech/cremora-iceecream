@@ -32,13 +32,13 @@ export default function Hero({ onExploreClick }) {
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
         
         {/* Left Column: Editorial Headlines */}
-        <div className="lg:col-span-7 space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
+        <div className="lg:col-span-7 space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start w-full">
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FDF0F2] border border-[#F8B1BA] text-[#E84A5F] text-xs font-semibold tracking-widest uppercase"
+            className="inline-flex self-center lg:self-start items-center gap-2 px-4 py-1.5 rounded-full bg-[#FDF0F2] border border-[#F8B1BA] text-[#E84A5F] text-xs font-semibold tracking-widest uppercase"
           >
             <Sparkles className="w-3.5 h-3.5" />
             <span>ARTISANAL CREATIONS</span>
@@ -49,7 +49,7 @@ export default function Hero({ onExploreClick }) {
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-[#2A1810] font-serif-expressive leading-[0.95]"
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-[#2A1810] font-serif-expressive leading-[0.95] text-center lg:text-left"
             >
               A LITTLE <br />
               <span className="text-[#E84A5F] italic font-normal">MOMENT</span> <br />
@@ -61,7 +61,7 @@ export default function Hero({ onExploreClick }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-[#8C766B] max-w-md mx-auto lg:mx-0 font-sans-clean font-light leading-relaxed"
+            className="text-lg md:text-xl text-[#8C766B] max-w-md mx-auto lg:mx-0 font-sans-clean font-light leading-relaxed text-center lg:text-left"
           >
             “Made for the pause between busy moments.”
           </motion.p>
@@ -70,7 +70,7 @@ export default function Hero({ onExploreClick }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-4 w-full"
+            className="flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-6 pt-4 w-full"
           >
             <a
               href="#flavours"

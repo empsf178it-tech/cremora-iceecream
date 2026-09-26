@@ -50,7 +50,7 @@ export default function TextureLab() {
                   <span className="text-xs font-bold tracking-widest uppercase text-[#E84A5F]">
                     DIMENSION / {item.id.toUpperCase()}
                   </span>
-                  <h3 className="text-2xl sm:text-3xl md:text-2xl lg:text-4xl font-black font-serif-expressive text-[#2A1810] tracking-tight break-words">
+                  <h3 className="text-2xl sm:text-3xl md:text-xl lg:text-4xl font-black font-serif-expressive text-[#2A1810] tracking-tight leading-tight break-words hyphens-auto">
                     {item.title}
                   </h3>
                   <p className="text-xs font-semibold uppercase tracking-wider text-[#8C766B]">
